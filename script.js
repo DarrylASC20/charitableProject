@@ -33,3 +33,7 @@ function printNews(news) {
 }
 
 
+#topLogo {
+    width: 10%;
+    height: initial;
+}
