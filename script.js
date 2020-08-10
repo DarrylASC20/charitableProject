@@ -15,7 +15,6 @@ function printInfo(info) {
 
     console.log(info);
 
-
 }
 
 let api2 = "https://gnews.io/api/v3/search?q=example&token=3069c2ba43fc4972906cf4e38414e2f7";
@@ -26,14 +25,10 @@ fetch(api2)
     })
     .then(function (myJson) {
         printNews(myJson);
+        console.log(myJson.articles[0].title);
     });
 
 function printNews(news) {
-    console.log(news);
+    
 }
 
-
-#topLogo {
-    width: 10%;
-    height: initial;
-}

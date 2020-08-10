@@ -10,9 +10,20 @@
 </head>
 <body>
     <div class ="header" id="myHeader">
-    <img id="topLogo" src="img/logo.png">
-    <p class= "dropDown"><strong>Topic</strong></p>
-    </div>  
+    <img id="topLogo" src="img/logostretched.png">
+    <form action="/action_page.php">
+        <label class= "dropDown" for="topics"><strong>Topics:</strong></label>
+        <select name="topics" id="dropDown">
+            <option value="top">Top Stories</option>
+            <option value="natural">Natural Disasters</option>
+            <option value="global">Global News</option>
+            <option value="envProb">Environmental Problems</option>
+            <option value="social">Social Justice</option>
+            <option value="health">Health</option>
+        </select>
+    </form>
+    </div> 
+    <!--<footer>PRIVACY POLICY</footer>-->
 </body>
 
 </html>

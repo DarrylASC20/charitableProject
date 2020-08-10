@@ -1,10 +1,11 @@
 body {
     background-color: #1F1E2D;
+    margin: 0px;
 }
 .header{
     background-color: white;
     display: flex;
-    
+    border-bottom: 2px solid black;  
 }
 h1{
     display: flex;
@@ -18,11 +19,22 @@ h1{
 .dropDown {
     color: #1F1E2D;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: -2px 4px 4px black;
+    text-shadow: -2px 3px 3px black;
+    margin-top: 30px;
+}   
+
+#dropDown {
+    color: #1F1E2D;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #topLogo {
-    width: 100px;
-    height: 75px;
+    width: initial;
+    height: 50px;
 }
 
+footer {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline white;
+}
