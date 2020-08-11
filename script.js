@@ -21,13 +21,9 @@ function printInfo(info) {
 
 
 
-let api2 = "https://gnews.io/api/v3/search?q=example&token=3069c2ba43fc4972906cf4e38414e2f7";
-let disasterNews = "https://gnews.io/api/v3/topics/natural+disasters?token=3069c2ba43fc4972906cf4e38414e2f7";
-let enviroNews = "https://gnews.io/api/v3/topics/environment?token=3069c2ba43fc4972906cf4e38414e2f7";
-let worldNews = "https://gnews.io/api/v3/topics/world?token=3069c2ba43fc4972906cf4e38414e2f7";
-let healthNews = "https://gnews.io/api/v3/topics/health?token=3069c2ba43fc4972906cf4e38414e2f7";
+let api2 = "https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=Disease&sortBy=popularity&apiKey=cee80a6b38374a4bbd109317f0b22f55";
 
-fetch(healthNews)
+fetch(api2)
     .then(function (response) {
         return response.json();
     })
@@ -37,7 +33,7 @@ fetch(healthNews)
 
 function printNews(news) {
     for(let p = 1; p < 10; p++){
-        console.log(article[0].description);
+        console.log(news);
     }
 }
 

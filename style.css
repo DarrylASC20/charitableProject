@@ -29,14 +29,12 @@
     width: 352px;
     color: rgba(255, 255, 255, 1);
     position: absolute;
-    top: 102px;
-    left: 543px;
+    top: 100px;
+    left: 470px;
     text-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
     font-family: Montserrat;
     font-weight: ExtraBold;
     font-size: 50px;
-    opacity: 1;
-    text-align: center;
 }
 
 /*.dashboard {
@@ -63,19 +61,6 @@
     font-family: Montserrat;
     font-weight: Black;
     font-size: 30px;
-    opacity: 1;
-    text-align: center;
-}
-
-.footer {
-    width: 252px;
-    color: rgba(255, 255, 255, 1);
-    position: absolute;
-    top: 975px;
-    left: 38px;
-    font-family: Montserrat;
-    font-weight: Medium;
-    font-size: 25px;
     opacity: 1;
     text-align: center;
 }
@@ -120,16 +105,14 @@
 }
 
 .artPic {
-    width: 139px;
-    color: rgba(0, 0, 0, 1);
+    width: 140px;
+    color: black;
     position: absolute;
-    top: 231px;
-    left: 70px;
+    top: 200px;
+    left: 
     font-family: Montserrat;
     font-weight: Medium;
     font-size: 25px;
-    opacity: 1;
-    text-align: center;
 }
 
 .social {
@@ -182,4 +165,18 @@
     font-size: 25px;
     opacity: 1;
     text-align: center;
+}
+
+.footer {
+    width: 252px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 975px;
+    left: 38px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 25px;
+    opacity: 1;
+    text-align: center;
+    cursor: pointer;
 }
