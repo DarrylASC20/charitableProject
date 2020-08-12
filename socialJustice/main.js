@@ -1,7 +1,7 @@
-let api = "https://api.data.charitynavigator.org/v2/Organizations?app_id=fdc3d132&app_key=dbbd7d630df788b5c498c1a97cfb7e87";
+let socialJustice = "https://api.data.charitynavigator.org/v2/Organizations?app_id=fdc3d132&app_key=dbbd7d630df788b5c498c1a97cfb7e87&search=Social%20Justice";
 let container = document.querySelector('.charLink');
 
-fetch(api)
+fetch(socialJustice)
     .then(function (response) {
         return response.json();
     })
@@ -19,7 +19,7 @@ function printInfo(info) {
     }
 }
 
-let api2 = "https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=Coronavirus&sortBy=popularity&apiKey=cee80a6b38374a4bbd109317f0b22f55";
+let api2 = "https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=social+justice&sortBy=popularity&apiKey=cee80a6b38374a4bbd109317f0b22f55";
 let artName = document.querySelector('.artName');
 let story = document.querySelector('.story');
 let fullStory = document.querySelector('.link');
