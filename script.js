@@ -13,8 +13,14 @@ function printInfo(info) {
     for(let p = 1; p < 4; p++){  
         container.innerHTML += info[p].charityName + "-" + "<br>" + info[p].charityNavigatorURL + "<br>" + "<br>";  
     }
+    const Http = new XMLHttpRequest();
     let url = info[p].charityNavigatorURL;
-    href = url;
+    Http.open("GET", url);
+    Http.send();
+
+    Http.onreadystatechange = (e) => {
+    console.log(Http.responseText)
+}
 }
 
 let api2 = "https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=Coronavirus&sortBy=popularity&apiKey=cee80a6b38374a4bbd109317f0b22f55";
