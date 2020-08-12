@@ -4,32 +4,41 @@
 <head>
     <title>Charitable</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
-    <script src = "natural/script.js" defer></script>
+    <script src = "../natural/main.js" defer></script>
     <link href="style.css" rel="stylesheet"/>
 </head>
 
 <body>
     <div class="welcome">
         <div id="nav">
-            <a href="../index.html"><img src="img/logo1-removebg-preview.png" alt="Charitable">Charitable</a>
+            <a href="../index.html"><img src="../img/logo1-removebg-preview.png" alt="Charitable">Charitable</a>
             <a href="../socialJustice/index.html">Social Justice</a>
             <a href="../Health/index.html">Health</a>
             <a href="../environ/index.html">Environmental </a>
             <a href="../natural/index.html">Natural Disasters</a>
         </div>
-        <div class= "article">
-            <span class="header">Natural Disasters</span>
-            <span class="artPic">Article Picture</span>
-            <!--<span class="dashboard">Dashboard</span>-->
-            <span class="artName">ARTICLE NAME</span>
-            <span class="story">Description/Story</span>
-            <span class="link">Full Story at: </span>
-        </div>
-        <div class="charLink">
-            <span>Charity/Donation Links:<br> </span> 
+        <div class= "body">
+            <h1 class="header">Natural Disasters</h1>
+            <div class= "article">
+                <img class="artPic" src="">
+                <p class="artName">ARTICLE NAME</p>
+                <p class="story">Description/Story</p>
+                <p class="link">Full Story at: </p>
+            </div>
+            <button id= "previous"> < </button>
+            <button id= "next"> > </button>
+            <hr>
+            <div class="charLink">
+                <span id="charHead"><strong>Charity/Donation Links:<br><br></strong></span> 
+            </div>
         </div>
     </div>
-    <footer id="footer">PRIVACY POLICY</footer>
+    <footer id="footer">
+        <a href ="../privacyPolicy/index.html">PRIVACY POLICY</a>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+    </footer>
 </body>
 
 </html>

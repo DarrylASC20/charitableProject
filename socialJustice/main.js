@@ -10,38 +10,74 @@ fetch(socialJustice)
     });
 
 function printInfo(info) {
-    for(let p = 1; p < 4; p++){  
-        container.innerHTML += info[p].charityName + "-" + "<br>" + info[p].charityNavigatorURL + "<br>" + "<br>";  
-    }
-    let url = info[p].charityNavigatorURL;
-    url.onClick() = function(){
-        window.open(url, '_blank');
+    // <a href="link" target="_blank">name</a>
+    for(let p = 1; p < 5; p++) {
+        let a = document.createElement("a");
+        a.setAttribute("href", info[p].charityNavigatorURL);
+        a.setAttribute("target", "_blank");
+        a.innerHTML = info[p].charityName;
+        container.appendChild(a);
     }
 }
 
 let api2 = "https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=social+justice&sortBy=popularity&apiKey=cee80a6b38374a4bbd109317f0b22f55";
+let container2 = document.querySelector('.article');
+let artPic = document.querySelector('.artPic');
 let artName = document.querySelector('.artName');
 let story = document.querySelector('.story');
 let fullStory = document.querySelector('.link');
+let allArticles = [];
+let index = 0;
 
 fetch(api2)
     .then(function (response) {
         return response.json();
     })
     .then(function (myJson) {
-        printNews(myJson);
+        allArticles = myJson.articles;
+        printNews(index);
     });
 
-function printNews(news) {
-    for(let p = 1; p < 10; p++){
-        artName.innerHTML += news[p].sources.name;
-        story.innerHTML += story[p].sources.description;
-        fullStory.innerHTML += news[p].sources.url;
+function printNews(index) {
+    console.log(index);
+    let article = allArticles[index];
+    artPic.src = article.urlToImage;
+    artName.innerHTML = article.title;
+    story.innerHTML = article.description;
+    fullStory.innerHTML = article.url;
+}
+
+let previous = document.getElementById('previous');
+let next = document.getElementById('next');
+
+function nextArticle(myArticles) {
+    index++;
+    printNews(index);
+    if(index == 0){
+        previous.style.display = 'none';
+    }
+    else if(index >= 1) {
+        previous.style.display = 'inline';
     }
 }
 
-/*let signUp = document.querySelector('#signUp');
+next.addEventListener('click', nextArticle);
 
-signUp.onclick() = function() {
+function prevArticle(myArticle) {
+    index++;
+    printNews(index);
+    if(index == 10){
+        previous.style.display = 'none';
+    }
+    else if(index <= 10) {
+        previous.style.display = 'inline';
+    }
+}
+
+previous.addEventListener('click', prevArticle);
+
+//let signUp = document.querySelector('#signUp');
+
+//signUp.onclick() = function() {
     
-}*/
+//}
