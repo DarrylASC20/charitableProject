@@ -14,9 +14,7 @@ function printInfo(info) {
         container.innerHTML += info[p].charityName + "-" + "<br>" + info[p].charityNavigatorURL + "<br>" + "<br>";  
     }
     let url = info[p].charityNavigatorURL;
-    url.onClick() = function(){
-        window.open(url, '_blank');
-    }
+    href = url;
 }
 
 let api2 = "https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=Coronavirus&sortBy=popularity&apiKey=cee80a6b38374a4bbd109317f0b22f55";
