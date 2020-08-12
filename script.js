@@ -48,6 +48,11 @@ function printNews(index) {
     artName.innerHTML = article.title;
     story.innerHTML = article.description;
     fullStory.innerHTML = article.url;
+
+    let a = document.createElement("a");
+        a.setAttribute("href", fullstory.innerHTML);
+        a.setAttribute("target", "_blank");
+        container2.appendChild(a);
 }
 
 let previous = document.getElementById('previous');

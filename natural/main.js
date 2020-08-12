@@ -59,7 +59,7 @@ function nextArticle(myArticles) {
         previous.style.display = 'none';
     }
     else if(index >= 1) {
-        previous.style.display = 'block';
+        previous.style.display = 'inline';
     }
 }
 
@@ -77,9 +77,3 @@ function prevArticle(myArticle) {
 }
 
 previous.addEventListener('click', prevArticle);
-
-//let signUp = document.querySelector('#signUp');
-
-//signUp.onclick() = function() {
-    
-//}

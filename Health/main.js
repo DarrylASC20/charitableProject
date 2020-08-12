@@ -21,6 +21,7 @@ function printInfo(info) {
 }
 
 let api2 = "https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=Health&sortBy=popularity&apiKey=cee80a6b38374a4bbd109317f0b22f55";
+let container2 = document.querySelector('.article');
 let artPic = document.querySelector('.artPic');
 let artName = document.querySelector('.artName');
 let story = document.querySelector('.story');
@@ -56,7 +57,7 @@ function nextArticle(myArticles) {
         previous.style.display = 'none';
     }
     else if(index >= 1) {
-        previous.style.display = 'block';
+        previous.style.display = 'inline';
     }
 }
 
@@ -74,9 +75,3 @@ function prevArticle(myArticle) {
 }
 
 previous.addEventListener('click', prevArticle);
-
-/*let signUp = document.querySelector('#signUp');
-
-signUp.onclick() = function() {
-    
-}*/
