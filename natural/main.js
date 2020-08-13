@@ -54,6 +54,8 @@ function printNews(index) {
     b.setAttribute("class", "fullStory");
     b.innerHTML = "Full Article";
     container2.appendChild(b);
+
+    //b.style.display = 'none'; 
 }
 
 let previous = document.getElementById('previous');

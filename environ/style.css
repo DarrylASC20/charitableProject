@@ -58,7 +58,6 @@ body {
     font-weight: ExtraBold;
     font-size: 50px;
     margin: 20px;
-
 }
 
 .body {
@@ -107,6 +106,10 @@ p.fullStory {
     display: none;
 }
 
+.fullStory a:hover {
+    background-color: darkgray;
+}
+
 #next, #previous {
     display: inline-block;
     outline: none;
@@ -141,6 +144,10 @@ p.fullStory {
     border: 1px solid white;
     border-radius: 15px;
     font-size: 15px;
+}
+
+.charLink a:hover {
+    background-color:darkgray;
 }
 
 #charHead{
