@@ -28,6 +28,7 @@ let artPic = document.querySelector('.artPic');
 let artName = document.querySelector('.artName');
 let story = document.querySelector('.story');
 let fullStory = document.querySelector('.fullStory');
+let fullArticle = document.querySelector('.fullArticle');
 let allArticles = [];
 let index = 0;
 
@@ -47,15 +48,7 @@ function printNews(index) {
     artName.innerHTML = article.title;
     story.innerHTML = article.description;
     fullStory.innerHTML = article.url;
-
-    let b = document.createElement("a");
-    b.setAttribute("href", article.url);
-    b.setAttribute("target", "_blank");
-    b.setAttribute("class", "fullStory");
-    b.innerHTML = "Full Article";
-    container2.appendChild(b);
-
-    //b.style.display = 'none'; 
+    fullArticle.href = article.url;
 }
 
 let previous = document.getElementById('previous');
