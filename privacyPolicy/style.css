@@ -9,6 +9,13 @@
     margin: auto;
 }
 
+body {
+    margin: 0;
+}
+
+@media (max-width: 906px) {
+}
+
 #nav {
     border-bottom: 2px solid black;
     cursor: pointer;
@@ -53,19 +60,17 @@
     font-family: Montserrat;
     font-weight: ExtraBold;
     font-size: 50px;
-    margin: 20px;
-
 }
 
 .privacyPolicy {
-    justify-content: center;
-    width: 800px;
     color: whitesmoke;
-    position: absolute;
-    top: 200px;
     font-family: Montserrat;
     font-weight: Medium;
     font-size: 25px;
+}
+
+.icons {
+    margin: auto;
 }
 
 #footer {

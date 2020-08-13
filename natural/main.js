@@ -27,7 +27,7 @@ let container2 = document.querySelector('.article');
 let artPic = document.querySelector('.artPic');
 let artName = document.querySelector('.artName');
 let story = document.querySelector('.story');
-let fullStory = document.querySelector('.link');
+let fullStory = document.querySelector('.fullStory');
 let allArticles = [];
 let index = 0;
 
@@ -47,6 +47,13 @@ function printNews(index) {
     artName.innerHTML = article.title;
     story.innerHTML = article.description;
     fullStory.innerHTML = article.url;
+
+    let b = document.createElement("a");
+    b.setAttribute("href", article.url);
+    b.setAttribute("target", "_blank");
+    b.setAttribute("class", "fullStory");
+    b.innerHTML = "Full Article";
+    container2.appendChild(b);
 }
 
 let previous = document.getElementById('previous');
@@ -55,25 +62,19 @@ let next = document.getElementById('next');
 function nextArticle(myArticles) {
     index++;
     printNews(index);
-    if(index == 0){
-        previous.style.display = 'none';
-    }
-    else if(index >= 1) {
-        previous.style.display = 'inline';
-    }
 }
 
 next.addEventListener('click', nextArticle);
 
 function prevArticle(myArticle) {
-    index++;
+    index--;
     printNews(index);
-    if(index == 10){
-        previous.style.display = 'none';
-    }
-    else if(index <= 10) {
-        previous.style.display = 'inline';
-    }
 }
 
 previous.addEventListener('click', prevArticle);
+
+//let signUp = document.querySelector('#signUp');
+
+//signUp.onclick() = function() {
+    
+//}
