@@ -151,7 +151,7 @@ p.fullStory {
     background-color:darkgray;
 }
 
-#charHead{
+#charHead {
     font-size: 20px;
 }
 
@@ -168,4 +168,10 @@ p.fullStory {
 
 #footer a:hover {
     text-shadow: -2px 4px 4px;
+}
+
+@media (max-width: 420px) {
+    #footer {
+        bottom: 10px;
+    }
 }
