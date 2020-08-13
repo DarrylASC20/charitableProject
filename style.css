@@ -155,15 +155,17 @@ p.fullStory {
     font-size: 20px;
 }
 
-.icons {
-    margin: auto;
-}
-
 #footer {
+    text-align: center;
     text-decoration: none;
     font-family: Montserrat;
     background-color: rgba(31, 30, 45, 1);
     color: whitesmoke;
     cursor: pointer;
     border-top: 2px solid black;
+    padding: 5px;
+}
+
+#footer a:hover {
+    text-shadow: -2px 4px 4px;
 }
